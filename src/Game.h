@@ -4,18 +4,12 @@
 #include <vector>
 #include <memory>
 
-
-#include "Enemy_Presets/Enemy_Preset.h"
 #include "Enemy.h"
-#include "Game.h"
-
-#include "Demon.h"
-
-#include "Texture.h"
 
 enum class Texture_Name
 {
-    Demon
+    Demon,
+    Slime
 };
 
 class Game

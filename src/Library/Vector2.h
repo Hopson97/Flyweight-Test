@@ -4,8 +4,8 @@
 template <typename T>
 struct Vector2
 {
-    T x;
-    T y;
+    T x = 0;
+    T y = 0;
 
     T operator +( const Vector2 other )
     {
