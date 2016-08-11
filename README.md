@@ -8,5 +8,3 @@ How it works is the "Enemy" class has a pointer to a "Enemy_Preset". The derived
 So multiple enemies of the same type have a pointer to the same preset, saving memory and time for allcation of memory for said enemy.
 
 I also added some stuff that you'd find in a typical game source so it makes more sense about useage (see Game.h and Game.cpp), as well as some stuff you'd typically find in some random game library such as SFML, such as Texture and Sprite classes.
-
-So am I doing this correctly? Thanks.
