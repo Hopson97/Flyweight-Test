@@ -5,6 +5,7 @@
 #include <iostream>
 
 #include "Demon_Preset.h"
+#include "Slime_Preset.h"
 
 static std::map<Enemy_Preset_Name, std::unique_ptr<Enemy_Preset> > presets;
 
@@ -18,6 +19,7 @@ Enemy_Preset :: Enemy_Preset( int maxHealth, const Texture& texture )
 void Enemy_Preset :: initDatabase    ()
 {
     presets.insert( std::make_pair( Enemy_Preset_Name::Demon, std::make_unique<Demon_Preset>() ) );
+    presets.insert( std::make_pair( Enemy_Preset_Name::Slime, std::make_unique<Slime_Preset>() ) );
 }
 
 void Enemy_Preset :: clearDatabase   ()
