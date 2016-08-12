@@ -4,8 +4,12 @@
 
 #include "Demon.h"
 #include "Slime.h"
+#include "Enemy_Preset.h"
 
-static std::map<Texture_Name, Texture> textures;
+namespace
+{
+    std::map<Texture_Name, Texture> textures;
+}
 
 Game::Game()
 {
@@ -20,6 +24,7 @@ Game::Game()
 
     m_enemies.push_back( std::make_unique<Slime>() );
     m_enemies.push_back( std::make_unique<Slime>() );
+
 }
 
 Game::~Game()
